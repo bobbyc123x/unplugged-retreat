@@ -98,9 +98,38 @@ textarea {
    ========================================================================== */
 
 /* ==========================================================================
-   base
-   ========================================================================== */
+   base styles
+ 
+========================================================================== */
+html {
+	font-size: 16px;
+}
 
+body {
+    font-size: 1em; 
+    font-family: 'Open Sans', sans-serif; }
+
+
+h2, h3, h4 {font-family: 'Poppins', sans-serif;}
+
+h2 {font-size: 1.5em;}
+
+h3, h4 {font-size: 1.17em;}
+
+p {font-size: .85em;}
+
+ol, uol {
+  list-style-type: none;
+}
+ 
+a {
+     color: #e2e3ed;
+     text-decoration: none;
+}
+
+address {
+ font-style: normal;
+}
 
 .content-wrapper {
   width: 90%;
