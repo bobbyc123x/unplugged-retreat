@@ -16,6 +16,17 @@ html {
     line-height: 1.4;
 }
 
+img {
+
+width: 100%;
+
+    
+}
+
+figure {
+        margin: 0;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -105,7 +116,7 @@ html {
 	font-size: 16px;
 }
 
-body {color: #e2e3ed;
+body {color: #e2e3ef;
     text-align: left;
     font-size: 1em; 
     font-family: 'Open Sans', sans-serif; }
@@ -113,10 +124,11 @@ body {color: #e2e3ed;
 
 h2, h3, h4 {font-family: 'Poppins', sans-serif;}
 
-h2 {font-size: 1.5em;}
+h2 {font-size: 1.75em;}
 
-h3, h4 {font-size: 1.17em;
-        margin: 20px 0;}
+h3, h4 {font-size: 1.25em;
+        margin: 20px 0;
+        font-weight: 500;}
 
 p {line-height: 1.285;
     font-size: .875em;}
@@ -148,7 +160,7 @@ footer {
     background-color: #202322;
 }
 
-header {
+header {    
     padding: 14px 0;
 }
 
@@ -162,6 +174,13 @@ header .content-wrapper
   flex-flow: row wrap;
   margin: 0;
     
+}
+header figure {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {width: 100%;
@@ -184,7 +203,13 @@ header nav ul {
   display: flex;
   justify-content: space-around;
     width: 100%;}
+
+header nav ul li {
+  font-size: 1.124em;
+}
   
+
+
 footer {
   text-align: center;
   flex-direction: column;
@@ -223,7 +248,18 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/jake-melara-30679-unsplash.jpg) center no-repeat #333;
+  background-size: cover;     
+     
 }
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500; 
+  line-height: 1.2; 
+}
+
 
 /* Aside */
 
@@ -241,9 +277,18 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/rawpixel-800820-unsplash1.jpg) center no-repeat #333;
+  background-size: cover;     
+    
 }
 
-.features p {margin: 0;}
+.features h2 {
+  margin-bottom: 60px;
+}
+
+
+.features p {margin: 0;
+text-align: center;}
 
 .features .features-items {
   display: flex;
@@ -264,8 +309,14 @@ width: 63%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #2a423a;       
+  background-color: #2a423a;  
+        
 }
+
+.reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
 
 .reviews h3 {
 width: 55%;
@@ -292,10 +343,12 @@ background-color: #2a423a;
 }
 
 /* ==========================================================================
-   FAQ 
+   FAQ Page
    ========================================================================== */
 
-.faq {background-color: #527158;
+
+
+  .faq {background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,10 +356,24 @@ background-color: #2a423a;
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 
@@ -321,6 +388,16 @@ background-color: #2a423a;
       margin: 100px 0;
     }
   
+    h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }   
+       
     /* Header */
     header {
       justify-content: space-around;
@@ -345,6 +422,16 @@ background-color: #2a423a;
     }
     /* Hero Area */
   
+    .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+}   
+       
     /* Aside */
     aside .content-wrapper {
       margin: 49px 0;
@@ -371,11 +458,13 @@ background-color: #2a423a;
     .features .features-item-description {
       width: 50%;
     }
-  
+
     /* Reviews */
     .reviews article {
       display: flex;
       justify-content: space-between;
+       
+        
     }
   
     .reviews article div {
@@ -427,23 +516,7 @@ background-color: #2a423a;
       align-items: flex-start;
     }
   
-    /* ==========================================================================
-     FAQ Page
-     ========================================================================== */
-  
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
-  
-    .faq-content {
-      flex-basis: 45%;
-    }
-  
-    .faq h2 {
-      width: 100%;
-    }
-  }
-
+    
  
 
 aside .form {
@@ -503,8 +576,27 @@ input[type=button] {
     .header-divider {
       display: none;
     }
+    
+    h2 {
+    font-size: 3.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
     /* Hero Area */
   
+    .hero-area h1 {
+    font-size: 4.75em;
+    width: 80%;
+}
+    
     /* Aside */
     aside .content-wrapper {
       margin: 50px 0;
@@ -520,16 +612,23 @@ input[type=button] {
     }
   
     /* Features */
+    
+    
     .features article {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: column wrap;
-      flex-basis: 30%;
+      flex-basis: 40%;
     }
     
+     .features h2 {
+    margin-bottom: 20px;
+  }
+
+    
     .features .features-item-description {
-      width: 30%;
+      width: 55%;
     }
   
     /* Reviews */
@@ -577,9 +676,12 @@ input[type=button] {
       width: 45%;
     }
   
-    .contact-section .content-wrapper h2 {
-      width: 80%;
-    }
+    .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 90%;
+      font-size: 3em;
+  }
+
   
     .contact-content {
       display: flex;
@@ -587,22 +689,32 @@ input[type=button] {
       align-items: flex-start;
     }
   
-    /* ==========================================================================
-     FAQ Page
-     ========================================================================== */
-  
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
-  
-    .faq-content {
-      flex-basis: 45%;
-    }
-  
-    .faq h2 {
-      width: 100%;
-    }
+    .contact-content h4 {
+    font-size: 1.875em;
+  }
     
+   /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1.125;
+  }
+} 
     
     
 }
