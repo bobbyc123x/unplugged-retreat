@@ -323,7 +323,7 @@ width: 63%;
 
 .reviews article figure,
   .reviews article div {
-    width: 49%;
+    width: 80%;
   }
 
 .reviews h3 {
@@ -434,7 +434,7 @@ background-color: #2a423a;
     }
   
     header nav {
-      width: 20%;
+      width: 30%;
     }
   
     header nav ul {
@@ -492,6 +492,7 @@ background-color: #2a423a;
   
     .reviews article div {
       width: 49%;
+      padding-left: 10px;    
     }
   
     /* Footer */
